@@ -1,4 +1,14 @@
 
+## 3??
+
+```
+cindex <- 7:15
+rindex <- 18:23
+dat <- read.xlsx("natgas.xlsx", sheetIndex = 1, colIndex=cindex, rowIndex =rindex)
+sum(dat$Zip*dat$Ext, na.rm=T)
+
+```
+
 
 ## 4
 
@@ -12,6 +22,8 @@ length(zips[zips == 21231])
 ```
 
 Ans: 127
+
+`system.time()` was inconclusive; referred to fact that DT is optimized.
 
 ## 5
 
